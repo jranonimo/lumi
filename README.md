@@ -53,3 +53,30 @@ cd lumi-projeto/back/extracaoPdf
 npm npm install pdf-parse
 node index.js
 ```
+
+
+### OBS:
+
+- Para rodar local, irá preciar fazar um ajuste no back e front
+
+  **Frontend**:
+  - Caminho: front/src/app.js
+  - Linha: 158
+  - Alterar para o seu localhost com a port e caminho definido, exemplo abaixo:
+```sh
+      const response = await axios.get(
+        "http://localhost:4000/lumi"
+      );
+```
+
+  **Backend**:
+  - Caminho: back/src/server.js
+  - Linha: 158
+  - Alterar para o seu localhost, exemplo abaixo:
+```sh
+     app.use(
+  cors({
+    origin: "http://localhost:3000",
+  })
+);
+``
