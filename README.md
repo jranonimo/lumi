@@ -32,24 +32,24 @@ Este projeto é um sistema para visualização de dados de consumo energético, 
 - Prisma Client
 
  Clone o repositório:
-
+```sh
    git clone https://github.com/seu-usuario/lumi-projeto.git
-
+```
 ### Backend
-
+```sh
    cd lumi-projeto/back
    npm install
    npm run dev
-   
+```
 ### Frontend
-
+```sh
 cd lumi-projeto/front
 npm install
 npm start
-
+```
 ### Extração de Dados
-
+```sh
 cd lumi-projeto/back/extracaoPdf
 npm npm install pdf-parse
 node index.js
-
+```
