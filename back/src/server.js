@@ -7,7 +7,7 @@ const app = express();
 // Configurar o middleware CORS
 app.use(
   cors({
-    origin: "https://projeto-lumi-rho.vercel.app",
+    origin: "https://lumi-ashy.vercel.app",
   })
 );
 
