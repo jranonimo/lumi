@@ -71,7 +71,7 @@ node index.js
 
   **Backend**:
   - Caminho: back/src/server.js
-  - Linha: 158
+  - Linha: 8
   - Alterar para o seu localhost, exemplo abaixo:
 ```sh
      app.use(
