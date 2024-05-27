@@ -1,0 +1,96 @@
+button {
+  border: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  background-color: #c2e1d5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.painel {
+  background-color: white;
+  width: 508px;
+  height: 383px;
+  overflow-y: scroll;
+}
+.dashboard {
+  background-color: white;
+  width: 900px;
+  height: 383px;
+  overflow-y: scroll;
+}
+.valores {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.valores td {
+  min-width: 200px;
+  max-width: 200px;
+  text-align: start;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: #64697b;
+}
+.valores th {
+  text-align: justify;
+}
+.header {
+  background-color: #0f3523;
+  width: 508px;
+  height: 60px;
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+}
+.btn {
+  border: none;
+  background-color: #0f3523;
+  width: 160px;
+  height: 50px;
+  border-radius: 24px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.inputSearch {
+  text-align: center;
+  border: none;
+  height: 50px;
+  width: 200px;
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
+}
+input:focus {
+  outline: none;
+}
+.search {
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+}
+.componentePdf {
+  display: block;
+  text-align: justify;
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #64697b;
+}
+.graficos{
+  display: flex;
+  text-align: -webkit-center;
+}
