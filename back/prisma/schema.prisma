@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgres://postgres.ltjjcxjwzcbjmdnujqdd:postgres.ltjjcxjwzcbjmdnujqdd@aws-0-sa-east-1.pooler.supabase.com:5432/postgres"
+}
+
+model lumi {
+  id                    Int     @id @default(autoincrement())
+  numerocliente         String?
+  mesanoreferencia      String?
+  mesreferencia         Int?
+  anoreferencia         Int?
+  energiaeletricaqnt    Int?
+  energiaeletricavalor  Decimal? @db.Decimal(10,2)
+  energiasceeqnt        Int?
+  energiasceevalor      Decimal? @db.Decimal(10,2)
+  energiacompensadaqnt  Int?
+  energiacompensadavalor Decimal? @db.Decimal(10,2)
+  contribmunicipalvalor Decimal? @db.Decimal(10,2)
+  nomepdf               String?
+}
